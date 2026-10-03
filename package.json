@@ -1,0 +1,20 @@
+{
+  "name": "ahrim-ai-lab-site-selected-modules",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Selected modules from the Ahrim AI Lab voice website. Viewing only.",
+  "license": "SEE LICENSE IN LICENSE",
+  "engines": { "node": ">=22.18" },
+  "scripts": {
+    "test": "node --test src/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "typescript": "^5"
+  }
+}
