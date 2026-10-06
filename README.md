@@ -4,6 +4,8 @@
 
 The website of my AI automation agency, Ahrim AI Lab, with live voice agents built in. A visitor presses a button and talks to an AI agent right in the browser, with no app and no phone call. The site has two demo agents for a real estate agency: an outbound sales caller and an inbound receptionist. A visitor can also leave a phone number, and the outbound agent calls them back on a real phone line.
 
+![The first screen of the site](docs/screenshots/hero.jpg)
+
 ## The problem
 
 A voice agent is hard to sell with text and screenshots. A client wants to hear it first. A phone demo needs a number and a call at the right time.
@@ -19,6 +21,23 @@ A browser demo has a technical problem. Most visitors use laptop speakers, not h
 - A phone callback. The site sends the number to an n8n workflow, and n8n starts a Voximplant scenario in which the AI agent calls the visitor.
 - Lead forms that send each request to Telegram and Google Sheets.
 - Guards on the endpoints that cost money: a daily per-IP limit on voice sessions, a one-minute per-IP cooldown on callbacks and a honeypot field against bots.
+
+## Screenshots
+
+The site is in Russian. The phone numbers are placeholders, and the call in progress is a staged state with a made-up lead.
+
+| | |
+|---|---|
+| ![Outbound agent during a live browser call](docs/screenshots/voice-widget-live.png) | ![Inbound receptionist before a call](docs/screenshots/inbound-widget.png) |
+| The outbound agent during a call in the browser. The page shows the timer and marks the lead as saved. | The inbound receptionist. One tap starts a call in the browser, or the visitor can dial the number. |
+
+![Phone callback form](docs/screenshots/callback-form.png)
+
+The callback form. The visitor enters a number and the AI agent calls it on a real phone line.
+
+<img src="docs/screenshots/mobile-widget.png" alt="Voice demo on a phone" width="320">
+
+The same demo on a phone, waiting for the visitor to answer.
 
 ## How it works
 
